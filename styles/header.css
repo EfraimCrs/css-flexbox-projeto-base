@@ -1,0 +1,57 @@
+.header {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: var(--max-width-block); /* Limita a largura máxima */
+}
+.nav__list {
+    display: flex; /* Ativa o modelo flexível */
+    gap: var(--gap-x1); /* Espaço entre os itens */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Centraliza os itens no eixo transversal */
+    padding: var(--padding-s) 0; /* Espaçamento vertical interno */
+    list-style-type: none; /* Remove marcadores de lista */
+    flex-wrap: wrap; /* Quebra itens em várias linhas se necessário */
+}
+.nav__link {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: var(--cor-texto);
+    /* Define a cor do texto */
+    font-family: var(--fonte-texto);
+    /* Aplica a fonte personalizada */
+    font-size: var(--font-size-m);
+    /* Define o tamanho da fonte */
+    font-weight: 400;
+    /* Define a espessura da fonte */
+}
+
+.nav__input {
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    border-radius: 0.5rem;
+    /* Arredonda as bordas */
+    border: none;
+    /* Remove a borda padrão */
+    background-color: var(--cor-de-fundo-input);
+    /* Define a cor de fundo */
+    padding: var(--padding-s);
+    /* Adiciona espaçamento interno */
+    background-image: url(../images/location_on.svg);
+    /* Adiciona um ícone ao fundo */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    background-position: 95% center;
+    /* Posiciona a imagem no lado direito */
+}
+.menu__toggle {
+    display: none;
+    /* Tira o botao de menu*/
+}
+.nav__item form {
+    flex: 2;
+    /* Espaco entre os itens */
+}
+.nav__icons {
+    display: flex;
+    gap: 1.5em;
+    /* Espaco entre os icons carrinho e perfil*/
+}
