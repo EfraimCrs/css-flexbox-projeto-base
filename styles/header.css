@@ -52,6 +52,49 @@
 }
 .nav__icons {
     display: flex;
-    gap: 1.5em;
+    gap: 2.0em;
     /* Espaco entre os icons carrinho e perfil*/
+}
+
+
+/* efeitos de icons carrinho e casa*/
+.nav__icons * {
+    transition: scale 300ms, filter 300ms;
+}
+.nav__icons:has(:hover) :not(:hover) {
+    scale: 0.8;
+    filter: blur(1px);
+
+}
+@media screen and (max-width: 1200px) {
+    .nav__list {
+        row-gap: 2.0em; /* Espaço vertical entre os itens */
+        gap: var(--gap-s); /* Espaço entre os itens */
+    }
+
+    .nav__item form {
+        flex: 1 1 100%; /* Formulário ocupa 100% da largura */
+        text-align: center; /* Centraliza o conteúdo */
+        order: 1; /* Muda a ordem do formulário */
+    }
+    .header {
+        padding: 0 5.0em; /* Espaçamento nas laterais  esquerda e direita */
+    }
+}
+@media screen and (max-width:730px) {
+        .nav__link {
+            display: none;
+        }
+        .menu__toggle {
+            display: block;
+            cursor: pointer;
+        }
+        .header {
+            padding: 0 1.5em;
+        }
+
+        .menu__toggle__icon {
+            background-color: transparent;
+            border: none;
+        }
 }
