@@ -1,20 +1,4 @@
-/**
- *
- * Precisamos padronizar os espaçamentos: https://nordhealth.design/tokens/#space
- * a ideia é padronizar espaçamentos, tamannhos de fonte, line height, tudo em variáveis - controlando as quantidade de variantes como se fosse a propria TVA e evitar tamanhos de fontes expalhados e desproporcionais 
- *
- * Sobre o flex-direction, será que poderiamos usar um row-reverse ou column-reverse (de repente no mobile)?
- *
- * Esse artigo poderia entrar num PS+ ou algo assim: https://www.alura.com.br/artigos/css-guia-do-flexbox
- * 
- * Lembrar de: explicar o baseline e o strech do align-items
- *
- * Faltou falar sobre flex flow: https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-flow
- * Faltou o align-content (para multiplas rows ou columns, dependendo do flex-direction) https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
- * Faltou o flex-shrink https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
- * Faltou o flex-basis https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
- *
- */
+
 
 :root {
     --cor-texto: #1e1e1e;
@@ -34,7 +18,7 @@
     --border-color: #A6A6A6;
     --box-shadow-card: 0px 4px 24px 0px #7B7B7B26;
 
-    --fonte-texto: 'Poppins', sans-serif;
+    --fonte-texto: c;
     --fonte-titulo: 'Dela Gothic One', sans-serif;
 
     --gap-xs: 0.5rem;
@@ -60,17 +44,17 @@
     --max-width-block: 75rem;
 
     
-        --margin-xs: 0.5rem;
-        --margin-s: 1rem;
-        --margin-m: 1.5rem;
-        --margin-l: 2rem;
+    --margin-xs: 0.5rem;
+    --margin-s: 1rem;
+    --margin-m: 1.5rem;
+    --margin-l: 2rem;
 
-        --line-height-xs: 1.2rem;
-        --line-height-s: 1.5rem;
-        --line-height-m: 1.75rem;
-        --line-height-l: 2rem;
-        --line-height-xl: 2.5rem;
-        --line-height-xxl: 5.7rem;
+    --line-height-xs: 1.2rem;
+    --line-height-s: 1.5rem;
+    --line-height-m: 1.75rem;
+    --line-height-l: 2rem;
+    --line-height-xl: 2.5rem;
+    --line-height-xxl: 5.7rem;
     
 
 }
