@@ -40,6 +40,11 @@
     }
     .combo__titulo, .combo__titulo-destaque {
         font-size: 3rem;
+        line-height: 2.5rem;
     }
-    
+}
+@media screen and (max-width:730px) {
+    .combo__container {
+        padding: 0 1.5rem;
+    }
 }
