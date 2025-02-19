@@ -1,0 +1,85 @@
+.footer {
+    background-color: #1E1E1E;
+    padding: 2rem 1.5rem;
+    color: #ffffff;
+    font-family: #1e1e1e;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+}
+.footer__column-text {
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.footer__columns {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-flow: row wrap;
+}
+.footer__column-titulo {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+.footer__column-list {
+    margin-top: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer__column-list li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__column-list-redes-sociais {
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        padding: 2rem;
+    }
+    .footer__column-logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .footer__column {
+        flex-basis: 30%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .footer__column {
+        flex-direction: column;
+        padding: 1.5rem 0.5rem;
+    }
+    .footer__column-list-redes-sociais{
+        justify-content: center;
+    }
+}
+.footer__autor {
+    background: linear-gradient(270deg, #1100ff, #ff0022);
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
