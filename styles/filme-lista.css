@@ -82,3 +82,31 @@
     flex-direction: column;
     gap: 1.0em;
 }
+@media screen and (max-width: 730px) {
+    .filme-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filme-list__item {
+        flex-basis: 100%;
+        max-width: 90%;
+    }
+
+    .filme-list__container {
+        gap: 20px;
+        padding: 0.8rem;
+    }
+
+    .filme-list__linha {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filme-list__descricao-dimensao,
+    .filme-list__descricao-idade,
+    .filme-list__descricao-idade-livre {
+        padding: 0.4rem 0.8rem;
+        text-align: center;
+    }
+}

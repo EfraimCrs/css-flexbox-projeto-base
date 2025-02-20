@@ -43,17 +43,25 @@
         font-size: 3rem;
     }
 }
-@media screen and (max-width:730px) {
-    .banner{
+@media screen and (max-width: 730px) {
+    .banner {
         height: 25vh;
-        padding-left: 5vh;
+        padding-left: 3vh;
+        /* Reduzi para melhorar o alinhamento */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
+
     .banner__titulo {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        /* Ajustei para ficar mais proporcional */
         line-height: 1.2em;
     }
-    .banner__titulo-destaque {
-        font-size: 2em;
 
+    .banner__titulo-destaque {
+        font-size: 1.8rem;
+        /* Mantive consistente com o título */
     }
 }
